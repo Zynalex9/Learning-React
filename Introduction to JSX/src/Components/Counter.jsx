@@ -10,9 +10,19 @@ export default function Counterr() {
   };
   return (
     <>
-      <h1>Count : {count}</h1>
-      <button onClick={() => countState(count + 1)}>Increment</button>
-      <button onClick={decrement}> Decrement</button>
+      <div className="container">
+        <h1>Count : {count}</h1>
+        <button
+          onClick={() => countState(count + 1)}
+          className="btn btn-success"
+        >
+          Increment
+        </button>
+        <button onClick={decrement} className="btn btn-danger">
+          {" "}
+          Decrement
+        </button>
+      </div>
     </>
   );
 }
