@@ -1,0 +1,22 @@
+--Step 1
+    import React from "react";
+    const userContext = React.createContext();
+    export default userContext
+    Whenever we make a context it gives us provider. 
+--Step 2
+    We will create a provider after make a context.
+    import React, { useState } from "react";
+    import userContext from "./UserContext";
+    const userContextProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+    return (
+    <>
+      <userContext.Provider value={{user, setUser}}/>
+      {children}
+      <userContext.Provider />
+    </>
+    );
+    };
+    export default userContextProvider;
+
+
