@@ -1,0 +1,13 @@
+-- Create a store. Should be only 1 and we will tell it where the reducers ares
+-- we will create slice.
+-- we need there things to create slice. Name, Initialstate, and list of reducers
+-- in slice we give list of reducers
+-- in reducers we create functions
+-- we get state and action in reducers
+-- State: Updated state value in the store     
+-- Action: Action and payload
+-- export each reducer individually
+-- export main source
+-- re open store and give it list of reducers
+-- Then whenever you have to send values use dispatch. import reducer in it
+-- Use "useSelecter" to get the value. you get access of state from where you can retrieve the required value
